@@ -4,12 +4,16 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 def main_menu():
-    print("Bienvenido a la herramienta de phishing")
+    print(Colors.HEADER + "=====================================")
+    print("|   Bienvenido a la herramienta de   |")
+    print("|             phishing              |")
+    print("|            Autor: Tekilla          |")
+    print("=====================================" + Colors.END)
     print("Por favor, selecciona una opción:")
-    print("1. Phishing de Gmail")
-    print("2. Phishing de Outlook")
-    print("3. Otros servicios de correo")
-    print("4. Salir")
+    print("1. " + Colors.BLUE + "Phishing de Gmail" + Colors.END)
+    print("2. " + Colors.BLUE + "Phishing de Outlook" + Colors.END)
+    print("3. " + Colors.BLUE + "Otros servicios de correo" + Colors.END)
+    print("4. " + Colors.FAIL + "Salir" + Colors.END)
 
     option = input("Ingrese el número de opción: ")
 
